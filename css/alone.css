@@ -1,0 +1,342 @@
+body {
+ 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #111A21;
+    padding: 40px 0;
+    box-shadow: 0px 0px 25px white;
+  }
+
+  .text-hitam{
+    color: #111A21;
+  }
+
+  .text-merah{
+    color: #A9071C;
+  }
+
+  .text-putih{
+    color: #EBEFF0;
+  }
+
+  .merahcustom{
+    background-color: #A9071C;
+  }
+
+  .bg-shadow {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) -22%, rgba(0,0,0,0.5888480392156863) 62%);
+  }
+
+.gold{
+    background-color: #FFD700;
+}
+
+.bg-hitam{
+  background-color: #111A21;
+}
+
+.black-link {
+  color: rgb(249, 249, 249);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.black-link:hover {
+  color: #A9071C;
+}
+
+
+
+.media:hover{
+  background-color: #111A21;
+  color: #A9071C;
+  border: 2px solid #A9071C;
+  border-radius: 5%;
+}
+
+@media (max-width: 767px) {
+  .logo-center {
+     text-align: center;
+  }
+}
+
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.hover-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.hover-image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .hover-image {
+  transform: scale(1.2);
+}
+
+.image-wrapper:hover .hover-image-hover {
+  opacity: 1;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+.spacer {width: 100%; height: 100px;}
+
+body {font-family: "Open Sans", sans-serif;}
+
+nav .nav-bar {
+  padding: 20px; 
+  display: flex; 
+}
+nav .nav-bar .nav-bar_item {
+  list-style-type: none;
+  padding: 0px 20px;
+  
+}
+
+nav .nav-bar .nav-bar_item a {
+  position: relative;
+  display: block; 
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+nav .nav-bar .nav-bar_item a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: 0.1s ease-in-out;
+}
+nav .nav-bar .nav-bar_item a:hover:after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111A21;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  animation: fadeIn 0.3s ease-out;
+  right: 0;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn {
+  background-color: #111A21;
+  color: #EBEFF0;
+  padding: 10px 15px;
+  border: #EBEFF0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dropbtn::after {
+  content: '\25BC';
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropbtn::after {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.close {
+  color: #aaa;
+  font-size: 40px;
+  float: right;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.country-info {
+  display: flex;
+  align-items: center;
+}
+
+.country-name {
+  margin-left: 10px;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 1px;
+}
+
+.flag.ina {
+  background: url('../img/indonesia.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.eku {
+  background: url('../img/ekuador.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.mar {
+  background: url('../img/maroko.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.par {
+  background: url('../img/parama.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.spa {
+  background: url('../img/spanyol.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.mal {
+  background: url('../img/mali.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.uz {
+  background: url('../img/Uzbekistan.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.can {
+  background: url('../img/canada.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.bra {
+  background: url('../img/brazil.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.ing {
+  background: url('../img/inggris.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.ira {
+  background: url('../img/iran.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.kal {
+  background: url('../img/kaledonia.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.jpn {
+  background: url('../img/jepang.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.arg {
+  background: url('../img/argentina.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.sen {
+  background: url('../img/senegal.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.pol {
+  background: url('../img/polandia.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.pra {
+  background: url('../img/prancis.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.kor {
+  background: url('../img/korea.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.ame {
+  background: url('../img/amerika.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.bur {
+  background: url('../img/burkina.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.mex {
+  background: url('../img/mexico.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.jer {
+  background: url('../img/jerman.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.sel {
+  background: url('../img/selandia.png') no-repeat center center;
+  background-size: cover;
+}
+
+.flag.ven {
+  background: url('../img/vanezuela.png') no-repeat center center;
+  background-size: cover;
+}
+
